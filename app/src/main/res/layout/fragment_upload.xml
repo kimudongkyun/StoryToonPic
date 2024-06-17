@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".upload">
+
+
+    <!-- Upload status pop-up window -->
+    <FrameLayout
+        android:id="@+id/upload_status_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <!-- Background overlay -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" />
+
+        <!-- Pop-up window with text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <!-- Text view -->
+            <TextView
+                android:id="@+id/upload_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Successful"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Your existing UI elements -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Upload button -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="70dp"
+            app:srcCompat="@drawable/uploadimage" />
+
+        <!-- Image upload area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <!-- First image upload -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/uploaded_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image"
+                    android:contentDescription="Uploaded Image"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/upload_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#80FFFFFF"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="Upload Your Image!"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp">
+                <ImageView
+                    android:id="@+id/uploaded_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image"
+                    android:contentDescription="Uploaded Image"
+                    android:scaleType="centerInside"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/upload_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#80FFFFFF"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="Upload Your Image!"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <!-- First image upload -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp">
+                <ImageView
+                    android:id="@+id/uploaded_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image"
+                    android:contentDescription="Uploaded Image"
+                    android:scaleType="centerInside"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/upload_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#80FFFFFF"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="Upload Your Image!"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp">
+                <ImageView
+                    android:id="@+id/uploaded_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/image"
+                    android:contentDescription="Uploaded Image"
+                    android:scaleType="centerInside"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/upload_text4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#80FFFFFF"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:textAlignment="center"
+                    android:text="Upload Your Image!"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Upload button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_d"
+            android:text="Upload"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</FrameLayout>
