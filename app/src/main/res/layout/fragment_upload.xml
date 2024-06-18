@@ -72,15 +72,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:layout_margin="4dp">
-
                 <ImageView
                     android:id="@+id/uploaded_image1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/image"
+                    android:layout_height="match_parent"
                     android:contentDescription="Uploaded Image"
-                    android:visibility="gone"/>
-
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
                 <TextView
                     android:id="@+id/upload_text1"
                     android:layout_width="match_parent"
@@ -95,7 +93,6 @@
                     android:textSize="18sp"
                     android:visibility="visible" />
             </FrameLayout>
-
             <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -103,13 +100,11 @@
                 android:layout_margin="4dp">
                 <ImageView
                     android:id="@+id/uploaded_image2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:contentDescription="Uploaded Image"
-                    android:scaleType="centerInside"
-                    android:visibility="gone"/>
-
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
                 <TextView
                     android:id="@+id/upload_text2"
                     android:layout_width="match_parent"
@@ -124,6 +119,7 @@
                     android:textSize="18sp"
                     android:visibility="visible" />
             </FrameLayout>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -131,7 +127,6 @@
             android:orientation="horizontal"
             android:layout_marginTop="20dp">
 
-            <!-- First image upload -->
             <FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -139,13 +134,11 @@
                 android:layout_margin="4dp">
                 <ImageView
                     android:id="@+id/uploaded_image3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:contentDescription="Uploaded Image"
-                    android:scaleType="centerInside"
-                    android:visibility="gone"/>
-
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
                 <TextView
                     android:id="@+id/upload_text3"
                     android:layout_width="match_parent"
@@ -167,13 +160,11 @@
                 android:layout_margin="4dp">
                 <ImageView
                     android:id="@+id/uploaded_image4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:contentDescription="Uploaded Image"
-                    android:scaleType="centerInside"
-                    android:visibility="gone"/>
-
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
                 <TextView
                     android:id="@+id/upload_text4"
                     android:layout_width="match_parent"
@@ -188,6 +179,7 @@
                     android:textSize="18sp"
                     android:visibility="visible" />
             </FrameLayout>
+
         </LinearLayout>
 
         <!-- Upload button -->
